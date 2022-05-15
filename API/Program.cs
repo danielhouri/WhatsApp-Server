@@ -7,8 +7,12 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using API.Hubs;
+using Microsoft.AspNetCore.Builder;
+using Abp.AspNetCore.SignalR.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddDbContext<APIContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("APIContext") ?? throw new InvalidOperationException("Connection string 'APIContext' not found.")));
@@ -42,16 +46,24 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("Allow All",
+    options.AddPolicy("AllowAll",
         builder =>
         {
-            builder.AllowAnyOrigin()
+            builder
+            .AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader();
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowCredentials();
         });
 });
+builder.Services.AddSignalR();
 
 var app = builder.Build();
+
+app.UseRouting();
+
+app.UseCors("AllowAll");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -60,8 +72,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("Allow All");
-
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
@@ -69,5 +79,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<ContactsHub>("/ContactHub");
+});
 
 app.Run();
