@@ -1,12 +1,29 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using API.Services;
+using Microsoft.AspNetCore.SignalR;
 
 namespace API.Hubs
 {
     public class ContactsHub : Hub
     {
-        public async Task ContactChanged(string value)
+        private readonly IUserService _user;
+
+        public ContactsHub (IUserService user)
         {
-            await Clients.All.SendAsync("ChangeRecived", value);
+            _user = user;
+        }
+
+        public void Connect(string username)
+        {
+            _user.AddUserSignalR(username, Context.ConnectionId);
+        }
+         
+        public async Task ContactChanged(int refresh, string username)
+        {
+            string userId;
+            if(_user.GetUserIdSignalR(username, out userId))
+            {
+                await Clients.Client(userId).SendAsync("ChangeRecived", refresh + 1);
+            }
         }
     }
 }

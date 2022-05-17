@@ -16,13 +16,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<APIContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("APIContext") ?? throw new InvalidOperationException("Connection string 'APIContext' not found.")));
+
 builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IInvitaionService, InvitaionService>();
 builder.Services.AddScoped<ITransferService, TransferService>();
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -52,7 +52,7 @@ builder.Services.AddCors(options =>
             builder
             .AllowAnyOrigin()
             .AllowAnyMethod()
-            .WithOrigins("http://localhost:3000")
+            .WithOrigins("http://localhost:3000", "http://localhost:3001")
             .AllowAnyHeader()
             .AllowCredentials();
         });

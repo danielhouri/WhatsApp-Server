@@ -17,6 +17,7 @@ namespace API.Services
             if (cnt != null)
             {
                 var msg = new Message() { Send = false, Created= DateTime.Now, Content = content, Contact= cnt };
+                cnt.Last = content;
                 _context.Message.Add(msg);
                 _context.SaveChanges();
                 return true;
