@@ -5,20 +5,9 @@ namespace API.Services
     public class UserService : IUserService
     {
         private readonly APIContext _context;
-        private static Dictionary<string, string> _users = new Dictionary<string, string>();
         public UserService(APIContext Context)
         {
             _context = Context;
-        }
-
-        public void AddUserSignalR(string username, string userId)
-        {
-            _users.Add(username, userId);
-        }
-
-        public bool GetUserIdSignalR(string username, out string userId)
-        {
-            return _users.TryGetValue(username, out userId);
         }
 
         public bool SignIn(string Username, string Password)

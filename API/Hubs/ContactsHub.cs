@@ -5,24 +5,20 @@ namespace API.Hubs
 {
     public class ContactsHub : Hub
     {
-        private readonly IUserService _user;
-
-        public ContactsHub (IUserService user)
+        public async void Connect(string username)
         {
-            _user = user;
-        }
-
-        public void Connect(string username)
-        {
-            _user.AddUserSignalR(username, Context.ConnectionId);
+            await Groups.AddToGroupAsync(Context.ConnectionId, username);
         }
          
         public async Task ContactChanged(int refresh, string username)
         {
-            string userId;
-            if(_user.GetUserIdSignalR(username, out userId))
+            try
             {
-                await Clients.Client(userId).SendAsync("ChangeRecived", refresh + 1);
+                await Clients.Group(username).SendAsync("ChangeRecived", refresh + 1);
+            }
+            catch (Exception ex)
+            {
+                return;
             }
         }
     }
