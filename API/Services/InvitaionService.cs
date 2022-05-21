@@ -16,7 +16,7 @@ namespace API.Services
             var usr = _context.User.SingleOrDefault(u => u.Username == to);
             if (usr != null)
             {
-                var cnt = new Contact() { Id = from, Server = server, LastDate = DateTime.Now, User = usr, Message = new List<Message>() };
+                var cnt = new Contact() { Id = from, Server = server, Name=from, LastDate = DateTime.Now, User = usr, Message = new List<Message>() };
                 try
                 {
                     _context.Contact.Add(cnt);
