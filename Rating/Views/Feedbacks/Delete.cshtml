@@ -1,0 +1,48 @@
+﻿@model Rating.Models.Feedback
+
+@{
+    ViewData["Title"] = "Delete";
+    double AVG = ViewBag.AVG;
+
+}
+<div>
+    <h1 class="headrs">
+        USERS FEEDBACK
+    </h1>
+    <div class="heading-avg">
+        AVERAGE RATING: @AVG
+    </div>
+    <div>
+        <img class="mb-4 noselect whatsapp-icon" src="~/whatsapp.ico" alt="logo" width="80" role="img" />
+    </div>
+</div>
+
+<h3 class="text-center">Are you sure you want to delete this Feedback?</h3>
+<div>
+    <div class="card text-white bg-success mb-3" style="max-width: 30%; position: absolute; left: 34%; margin-top: 28px;">
+        <div class="card-header fw-bold">@Model.time.ToString("M/d/yyyy  hh:mm  tt")</div>
+        <div class="card-body">
+            <h5 class="card-title fw-bold">@Model.username</h5>
+            <h6 class="card-subtitle">
+                @{
+                    int i = 0;
+                    int count = Model.rate;
+                    for (; i < count; i++)
+                    {
+                        <i class="bi-star-fill"></i>
+                    }
+                    for (i = count; i < 5; i++)
+                    {
+                        <i class="bi-star"></i>
+                    }
+                }
+            </h6>
+            <p class="card-text">@Model.description</p>
+        </div>
+        <form asp-action="Delete" style="position: absolute; bottom: -18.1%; left: 0%;">
+            <input type="hidden" asp-for="username" />
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            <a class="fw-bold" asp-action="Index" style="color: #67ab49;">Back to List</a>
+        </form>
+    </div>
+</div>

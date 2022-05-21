@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{06F76CE0-9C0C-4C21-9F6C-D85411FB5777}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rating", "..\..\..\Downloads\Rating\Rating\Rating.csproj", "{DB0E1EE6-99C3-420F-8F74-934F6D67E361}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rating", "Rating\Rating.csproj", "{56BA9D2D-4E5A-42E0-8D2D-B1DD1FE0886F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{06F76CE0-9C0C-4C21-9F6C-D85411FB5777}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06F76CE0-9C0C-4C21-9F6C-D85411FB5777}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06F76CE0-9C0C-4C21-9F6C-D85411FB5777}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DB0E1EE6-99C3-420F-8F74-934F6D67E361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DB0E1EE6-99C3-420F-8F74-934F6D67E361}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DB0E1EE6-99C3-420F-8F74-934F6D67E361}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DB0E1EE6-99C3-420F-8F74-934F6D67E361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56BA9D2D-4E5A-42E0-8D2D-B1DD1FE0886F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BA9D2D-4E5A-42E0-8D2D-B1DD1FE0886F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BA9D2D-4E5A-42E0-8D2D-B1DD1FE0886F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BA9D2D-4E5A-42E0-8D2D-B1DD1FE0886F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
