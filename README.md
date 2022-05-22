@@ -5,8 +5,7 @@ This solution include 2 project:
 - WebClient - this part include the React code (inserted using the build command) and the feedback page.
 
 ## API (Web Service)
-
-
+The web service based on WebAPI model (.NET). It work with a localDB (ProjectModels), when a controller get a request the controller turns to the service and the last runs the query on the DB.The queries that are intended to the contact/message controller is limited. The acess is permitted just for a user that have a token (Issued at login).
 
 
 
@@ -22,6 +21,8 @@ To add a new feedback press on the button 'create new feedback button'. As menti
 - SignalR
 - React
 - Bootstrap
+- Entity Framework (ProjectModels)
+
 
 ## Submitting
 
