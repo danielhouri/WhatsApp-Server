@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\assets\whatsapp.ico" />
     <Content Remove="wwwroot\css\Feedback.css" />
     <Content Remove="wwwroot\whatsapp.ico" />
   </ItemGroup>
@@ -305,6 +304,10 @@
     <None Include="wwwroot\assets\whatsapp.ico" />
     <None Include="wwwroot\css\Feedback.css" />
     <None Include="wwwroot\static\css\main.c7b71a1e.css.map" />
+    <None Include="wwwroot\static\js\main.0a02875a.js" />
+    <None Include="wwwroot\static\js\main.0a02875a.js.map" />
+    <None Include="wwwroot\static\js\main.1cc4f899.js" />
+    <None Include="wwwroot\static\js\main.1cc4f899.js.map" />
     <None Include="wwwroot\static\js\main.3106fcb3.js" />
     <None Include="wwwroot\static\js\main.3106fcb3.js.map" />
     <None Include="wwwroot\static\js\main.36bf9a94.js" />
