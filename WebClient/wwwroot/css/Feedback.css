@@ -1,0 +1,124 @@
+﻿.headrs {
+    text-align: center;
+    color: #524342;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 12px;
+    background-image: linear-gradient(to left, #524342, #6fff00);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+img, .whatsapp-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+.heading-avg {
+    text-align: center;
+    color: #524342;
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px;
+}
+.card {
+    float: left;
+    margin: 18px;
+    width: 50%;
+    background-image: linear-gradient(90deg, rgb(83 179 133), rgb(134 151 150 / 2%)), repeating-linear-gradient(-45deg, #91cfa1, #92cdca 1.5px, #1aff56 2px, #8bd89f 4px);
+}
+.action {
+    color: #000 !important;
+    background-color: #a0aaba !important;
+    border-color: transparent !important;
+    margin: 1px;
+    width: fit-content;
+}
+.card-title {
+    justify-content: flex-start;
+    align-items: flex-end;
+    overflow: hidden;
+    font-size: x-large;
+    font-family: Clarendon LT, Lulo Clean, Georgia;
+    color: #FFF;
+    padding-bottom: 5px;
+    text-align: center !important;
+}
+.card-text {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #FFF;
+    font-weight: 800;
+    padding-bottom: 25px;
+    text-align: center !important;
+    padding-top: 10px;
+}
+
+.card-header {
+    color: #41464d;
+    padding-left: 19% !important;
+    font-size: large;
+    --bs-text-opacity: 1;
+}
+.card-subtitle {
+    color: #41464c;
+    text-align: center;
+}
+.feedback-class {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-footer {
+    background-color: transparent !important;
+    border-top: 0px solid rgba(0,0,0,.125) !important;
+    position: absolute;
+    bottom: 0px;
+}
+
+.searchbar {
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.search_input {
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color: transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+    padding: 0 10px;
+    width: 450px;
+    caret-color: red;
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+    background: white;
+    color: #e74c3c;
+}
+
+.search_icon {
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: transparent;
+}
+.container {
+    max-width: 100% !important;
+}
