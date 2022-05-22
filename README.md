@@ -29,8 +29,8 @@ To add a new feedback press on the button 'create new feedback button'. As menti
 
 ## Run
 The API (WebService) need to run on the address: https://localhost:7156/.<br />
-Also you need to set up 2 databases: API and the WebClient. To do this you have to run on the console the command: 'Update-Database'.
-
+Also you need to set up 2 databases: for the API and the for the WebClient - to do this you have to run on the console the command: 'Update-Database' (on each part).<br />
+The conntection string is configured to run with ProjectModels, you can change it to Myssql.
 
 
 ## Submitting
