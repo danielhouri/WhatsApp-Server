@@ -27,6 +27,9 @@ To add a new feedback press on the button 'create new feedback button'. As menti
 - Bootstrap
 - Entity Framework (ProjectModels)
 
+## Run
+The API (WebService) need to run on the address: https://localhost:7156/.
+Also you need to set up 2 databases: API and the WebClient. To do this you have to run on the console the command: 'Update-Database'.
 
 
 
