@@ -6,18 +6,21 @@ This solution include 2 project:
 
 ## API (Web Service)
 
-The WebClient is running on MVC:
-feedback page- Its the page where you can add a feedback about the website that inculde: username, rating 1-5 and discreption.
-to reach this page the user will need to press on the feedback button from the home page of WebClient and to add a new feedback
-users press on the create new feedback button.
-as mention the feedback site work in MVC platform and we created the feedback modal and controller that uses us to create and
-manage the site and we have the view which set the design of the feedback page.
-also we added a service intrafce and class which help us interact with the data base in the feedback controller so we dont limit
-the usage of site to a specific data base and make him genric.
-the site support all the featured requsted in exercise: create, edit, details, delete of a feedback and the average rating appears
-in top of the page.
-also the site support in search of a feedback by enternig a string containing the username
-or description of existing feedback on site.
+
+
+
+
+## WebClient
+The WebClient based on the MVC model and include 2 parts:
+- Chat (Based on React) - it's the same code as the last exercise except for the changes made to communicate with the API. Each request is send with a token (given by the API when signin) and it recieve a signal when there is an incoming message.
+- Feedback Page - Its the page where you can add a feedback about the website.
+To reach this page the user will need to press on the feedback button from the home page of Signin page (main page).
+To add a new feedback press on the button 'create new feedback button'. As mention the feedback site work in MVC platform, that include: models, services and controllers. The service use a localDB to store the data. The site support all the CRUED: create, edit, details, delete. The site also support a search function on the users who fill a feedback on the website.
+### Technologies:
+- JWT
+- SignalR
+- React
+- Bootstrap
 
 ## Submitting
 
