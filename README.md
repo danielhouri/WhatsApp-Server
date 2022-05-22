@@ -31,7 +31,7 @@ To add a new feedback press on the button 'create new feedback button'. As menti
 - **The API (WebService) need to run on the address: https://localhost:7156/.<br />**
 - Also you need to set up 2 databases: for the API and the for the WebClient - to do this you have to run on the console the command: **'Update-Database'** (on each part).<br />
 - The conntection string is configured to **run with ProjectModels**, you can change it to MSSQL.
-- Please install: JWT, SignalR and React.
+- Install: JWT, SignalR and React.
 
 
 ## Submitting
