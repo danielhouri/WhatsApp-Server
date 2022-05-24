@@ -5,7 +5,8 @@ This solution include 2 project:
 - WebClient - this part include the React code (inserted using the build command) and the feedback page.
 
 ## API (Web Service)
-The web service based on WebAPI model (.NET). It work with a localDB (ProjectModels), when a controller get a request the controller turns to the service and the last runs the query on the DB.The queries that are intended to the contact/message controller is limited.<br />The acess is permitted just for a user that have a token (Issued at login).
+The web service is based on WebAPI model (.NET). It works with a localDB (ProjectModels), when a controller gets a request the controller turns to the service, and the last runs the query on the DB. The queries that are intended for the contact/message controller is limited.<br />
+The access is permitted just for a user that has a token (Issued at login).
 
 #### Technologies:
 - JWT
