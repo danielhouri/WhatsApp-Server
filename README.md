@@ -1,8 +1,8 @@
 # WhatsApp-Server
 
-This solution include 2 project:
-- API - Its a web service that recevice and sent HTTP request and store the data on a LocalDB.
-- WebClient - this part include the React code (inserted using the build command) and the feedback page.
+This solution includes 2 projects:
+- API - It's a web service that receive and sent HTTP request and store the data on a LocalDB.
+- WebClient - this part includes the React code (inserted using the build command) and the feedback page.
 
 ## API (Web Service)
 The web service is based on WebAPI model (.NET). It works with a localDB (ProjectModels), when a controller gets a request the controller turns to the service, and the last runs the query on the DB. The queries that are intended for the contact/message controller is limited.<br />
