@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z5sunRGQPbSegnEnDZd0SWvPNSxldvHvD8PYbvlXMwCCyNE7Vcl7ZXrNipA26bLF3Rs5WUn4d/MQj7ZOQDNCsA==",
+  "dgSpecHash": "L6y3IWXHxMrdDB5Wa51NOVy0fnOyZFj1Npdbx7FyVdHbS/1K9PvA4+tl/C3Ep0tP5KypQO6ErlaCpzbYzN+lTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Daniel Houri\\.nuget\\packages\\abp\\7.2.1\\abp.7.2.1.nupkg.sha512",
     "C:\\Users\\Daniel Houri\\.nuget\\packages\\abp.aspnetcore.signalr\\7.2.1\\abp.aspnetcore.signalr.7.2.1.nupkg.sha512",

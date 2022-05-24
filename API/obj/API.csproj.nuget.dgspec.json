@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\API.csproj": {}
+    "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\API.csproj": {
+    "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Daniel Houri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Daniel Houri\\Source\\Repos\\WhatsAppServer\\API\\obj\\",
+        "outputPath": "C:\\Users\\Daniel Houri\\source\\repos\\WhatsAppServer\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Daniel Houri\\AppData\\Roaming\\NuGet\\NuGet.Config",
