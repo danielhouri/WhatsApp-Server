@@ -15,11 +15,11 @@ The access is permitted just for a user that has a token (Issued at login).
 
 
 ## WebClient
-The WebClient based on the MVC model and include 2 parts:
-- Chat (Based on React) - It's the same code as the last exercise except for the changes made to communicate with the API. Each request is send with a token (given by the API when signin) and it recieve a signal when there is an incoming message.
-- Feedback - Its the page where you can add a feedback about the website.
-To reach this page the user will need to press on the feedback button from the home page of Signin page (main page).
-To add a new feedback press on the button 'create new feedback button'. As mention the feedback site work in MVC platform, that include: models, services and controllers. The service use a localDB to store the data. The site support all the CRUED: create, edit, details, delete. The site also support a search function on the users who fill a feedback on the website.
+The WebClient is based on the MVC model and includes 2 parts:
+- Chat (Based on React) - It's the same code as the last exercise except for the changes made to communicate with the API. Each request is sent with a token (given by the API when Sign-in) and it received a signal when there is an incoming message.
+- Feedback - It's the page where you can add feedback about the website.
+To reach this page the user will need to press the feedback button from the home page of the Sign-in page (main page).
+To add a new feedback press the button 'create new feedback button'. As mentioned the feedback site work in MVC platform, which includes: models, services, and controllers. The service uses a localDB to store the data. The site support all the 'CRUED': create, edit, details, delete. The site also supports a search function for the users who fill feedback on the website.
 
 #### Technologies:
 - JWT
@@ -30,10 +30,9 @@ To add a new feedback press on the button 'create new feedback button'. As menti
 
 ## Run
 - **The API (WebService) must run on the address: https://localhost:7156/.<br />**
-- Also you need to set up 2 databases: for the API and the for the WebClient - to do this you have to run on the console the command: **'Update-Database' (on each part)**.<br />
-- The conntection string is configured to **work with ProjectModels**, you can change it to MSSQL.
-- Install: JWT, SignalR and React.
-
+- Also you need to set up 2 databases: the API and the the WebClient - to do this you have to run on the console the command: **'Update-Database' (on each part)**.<br />
+- The connection string is configured to **work with ProjectModels**, you can change it to MSSQL.
+- Install: JWT, SignalR, and React.
 
 ## Submitting
 
