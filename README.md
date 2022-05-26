@@ -16,7 +16,8 @@ The access is permitted just for a user that has a token (Issued at login).
 
 ## WebClient
 The WebClient is based on the MVC model and includes 2 parts:
-- Chat (Based on React) - It's the same code as the last exercise except for the changes made to communicate with the API. Each request is sent with a token (given by the API when Sign-in) and it received a signal when there is an incoming message.
+- Chat (Based on React) - It's the same code as the last exercise except for the changes made to communicate with the API. Each request is sent with a token (given by the API when Sign-in) and it received a signal when there is an incoming message.</br>
+The link to the entire code: https://github.com/danielhouri/WhatsAppServer.</br>
 - Feedback - It's the page where you can add feedback about the website.
 To reach this page the user will need to press the feedback button from the home page of the Sign-in page (main page).
 To add a new feedback press the button 'create new feedback button'. As mentioned the feedback site work in MVC platform, which includes: models, services, and controllers. The service uses a localDB to store the data. The site support all the 'CRUED': create, edit, details, delete. The site also supports a search function for the users who fill feedback on the website.
