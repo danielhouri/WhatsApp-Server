@@ -18,6 +18,9 @@
 <p>
     <a class="btn btn-outline-success fw-bold" asp-action="Create">Create a new feedback</a>
 </p>
+<p>
+    <a class="btn btn-outline-success fw-bold" style="color: #28a745;" onclick="location.href='@Url.Action("Index","Home")'">Back to Home</a>
+</p>
 @using (Html.BeginForm(nameof(Index)))
 {
     <div class="container h-100">
