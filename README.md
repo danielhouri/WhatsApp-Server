@@ -34,9 +34,3 @@ To add a new feedback press the button 'create new feedback button'. As mentione
 - Also you need to set up 2 databases: the API and the the WebClient - to do this you have to run on the console the command: **'Update-Database' (on each part)**.<br />
 - The connection string is configured to **work with ProjectModels**, you can change it to MSSQL.
 - Install: JWT, SignalR, and React.
-
-## Submitting
-
-- Daniel Houri: 314712563
-- Dor Huri: 209409218
-
